@@ -555,6 +555,10 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
             ),
             stderr: String::default(),
         }),
+        "conan --version" => Some(CommandOutput {
+            stdout: String::from("Conan version 2.19.1"),
+            stderr: String::default(),
+        }),
         "dotnet --version" => Some(CommandOutput {
             stdout: String::from("3.1.103"),
             stderr: String::default(),

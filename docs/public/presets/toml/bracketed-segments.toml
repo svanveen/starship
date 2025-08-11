@@ -19,6 +19,9 @@ format = '\[[⏱ $duration]($style)\]'
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
 
+[conan]
+format = '\[[$symbol($version)]($style)\]'
+
 [conda]
 format = '\[[$symbol$environment]($style)\]'
 

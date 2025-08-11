@@ -285,6 +285,7 @@ $package\
 $c\
 $cmake\
 $cobol\
+$conan\
 $daml\
 $dart\
 $deno\
@@ -935,6 +936,37 @@ running `eval $(starship init $0)`, and then proceed as normal.
 min_time = 500
 format = 'underwent [$duration](bold yellow)'
 ```
+
+## Conan
+
+The `conan` module shows the currently installed version of [Conan](https://conan.io/). By default
+the module will be activated if any of the following conditions are met:
+
+- The current directory contains a `conanfile.txt` file
+- The current directory contains a `conanfile.py` file
+
+### Options
+
+| Option              | Default                                | Description                                                               |
+| ------------------- | -------------------------------------- | ------------------------------------------------------------------------- |
+| `format`            | `'via [$symbol($version )]($style)'`   | The format for the module.                                                |
+| `version_format`    | `'v${raw}'`                            | The version format. Available vars are `raw`, `major`, `minor`, & `patch` |
+| `symbol`            | `' '`                                 | The symbol used before the version of conan.                              |
+| `detect_extensions` | `[]`                                   | Which extensions should trigger this module                               |
+| `detect_files`      | `['conanfile.txt', 'conanfile.py']`    | Which filenames should trigger this module                                |
+| `detect_folders`    | `[]`                                   | Which folders should trigger this module                                  |
+| `style`             | `'bold blue'`                          | The style for the module.                                                 |
+| `disabled`          | `false`                                | Disables the `conan` module.                                              |
+
+### Variables
+
+| Variable | Example   | Description                          |
+| -------- | --------- | ------------------------------------ |
+| version  | `v2.19.1` | The version of conan                 |
+| symbol   |           | Mirrors the value of option `symbol` |
+| style\*  |           | Mirrors the value of option `style`  |
+
+*: This variable can only be used as a part of a style string
 
 ## Conda
 

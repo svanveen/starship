@@ -34,6 +34,9 @@ symbol = "C++ "
 [cobol]
 symbol = "cobol "
 
+[conan]
+symbol = "conan "
+
 [conda]
 symbol = "conda "
 

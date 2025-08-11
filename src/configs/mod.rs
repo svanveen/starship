@@ -12,6 +12,7 @@ pub mod character;
 pub mod cmake;
 pub mod cmd_duration;
 pub mod cobol;
+pub mod conan;
 pub mod conda;
 pub mod container;
 pub mod cpp;
@@ -141,6 +142,8 @@ pub struct FullConfig<'a> {
     cmd_duration: cmd_duration::CmdDurationConfig<'a>,
     #[serde(borrow)]
     cobol: cobol::CobolConfig<'a>,
+    #[serde(borrow)]
+    conan: conan::ConanConfig<'a>,
     #[serde(borrow)]
     conda: conda::CondaConfig<'a>,
     #[serde(borrow)]

@@ -18,6 +18,7 @@ pub const ALL_MODULES: &[&str] = &[
     "cmake",
     "cmd_duration",
     "cobol",
+    "conan",
     "conda",
     "container",
     "cpp",

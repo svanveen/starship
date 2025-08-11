@@ -13,6 +13,9 @@ format = "via [$symbol]($style)"
 [cobol]
 format = "via [$symbol]($style)"
 
+[conan]
+format = "via [$symbol]($style)"
+
 [cpp]
 format = "via [$symbol($name)]($style)"
 

@@ -16,6 +16,9 @@ format = '(via [$symbol($version )]($style))'
 [cobol]
 format = '(via [$symbol($version )]($style))'
 
+[conan]
+format = '(via [$symbol($version )]($style))'
+
 [crystal]
 format = '(via [$symbol($version )]($style))'
 

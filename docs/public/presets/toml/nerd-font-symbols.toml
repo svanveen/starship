@@ -16,6 +16,9 @@ symbol = " "
 [cmake]
 symbol = " "
 
+[conan]
+symbol = " "
+
 [conda]
 symbol = " "
 
